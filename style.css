@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 100;
+}
+body{
+    background-color: #08061a;
+    font-family: arial;
+}
+.max_width{
+    width: 300px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+.max_width .data{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.max_width .data h2{
+    text-align: center;
+    color: #ffffff52;
+}
+.max_width .data_box{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    background-color: #24232a;
+    padding: 15px;
+}
+.max_width .data_box .message{
+    display: none;
+    /* display: flex; */
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #000000bf;
+    user-select: none;
+}
+.max_width .data_box .coped{
+    display: flex;
+}
+.max_width .data_box .message div{
+    margin: auto;
+    width: 33vw;
+    height: 36vh;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #24232a;
+    border-radius: 16px;
+    flex-direction: column;
+}
+.max_width .data_box .message div span{
+    font-size: 50px;
+    color: rgb(0, 255, 0);
+}
+.max_width .data_box .message div button{
+    border: none;
+    font-size: 35px;
+    background-color: #5daf82;
+    color: #000000bf;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+.max_width .data_box input{
+    background-color: transparent;
+    border: none;
+    color: #ffffff59;
+    cursor: context-menu;
+}
+.max_width .data_box .done{
+    opacity: 1;
+    color: white;
+}
+.max_width .data_box input:focus-visible{
+    outline: none;
+}
+.max_width .data_box .copy_pass{
+    border: none;
+    background: transparent;
+    color: #5daf82;
+    font-size: 15px;
+    cursor: pointer;
+}
+.max_width .main{
+    width: 100%;
+    padding: 15px;
+    background-color: #24232a;
+}
+.max_width .main .Character_Length{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.max_width .main .Character_Length h4{
+    display: inline-block;
+    opacity: 0.7;
+}
+.max_width .main .Character_Length h2{
+    display: inline-block;
+    color: #5daf82;
+}
+
+/* range 2 */
+.max_width .main .Character {
+    appearance: none; 
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    height: 6px;
+    margin-bottom: 20px;
+}
+
+.max_width .main .Character::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    height: 20px;
+    width: 20px;
+    background-color: #18171f;
+    border-radius: 50%;
+    border: 2px solid #5daf82;
+    transition: .2s ease-in-out;
+}
+
+.max_width .main .Character::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: #18171f;
+    border-radius: 50%;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+
+.max_width .main .inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+.max_width .main .inputs .inputs_data{
+    display: flex;
+    margin-bottom: 10px;
+}
+.max_width .main .inputs .inputs_data input{
+    margin-right: 10px;
+    cursor: pointer;
+    /* appearance: none; */
+    background-color: #18171f;
+    color: #5daf82;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    accent-color: #5daf82;
+}
+.max_width .main .inputs .inputs_data label{
+    opacity: 0.6;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+.max_width .main .inputs .inputs_data label:focus-visible{
+    outline: none;
+}
+.max_width .main .strength{
+    display: flex;
+    background-color: #18171f;
+    height: 50px;
+    align-items: center;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.max_width .main .strength h4{
+    opacity: 0.7;;
+}
+.max_width .main .strength .spans_container {
+    display: flex;
+}
+.max_width .main .strength .spans_container h3{
+    opacity: 0.9;
+    margin-right: 7px;
+}
+.max_width .main .strength .spans_container span{
+    width: 6px;
+    height: 20px;
+    background-color: #ddd;
+    margin-right: 5px;
+}
+.max_width .main .strength .spans_container .on{
+    background-color: #f7cf71;
+}
+.max_width .main .strength .spans_container .Bad{
+    background-color: lime;
+    opacity: 0.4;
+}
+.max_width .main .strength .spans_container .Weak{
+    background-color: lime;
+    opacity: 0.6;
+}
+.max_width .main .strength .spans_container .Good{
+    background-color: lime;
+    opacity: 0.8;
+}
+.max_width .main .strength .spans_container .Perfict{
+    background-color: lime;
+    opacity: 1;
+}
+.max_width .main .generat_button{
+    background-color: #5daf82;
+    border: none;
+    width: 100%;
+    padding: 13px;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+}
+.max_width .main .disabled{
+    opacity: 0.3;
+    background-color: #5daf82;
+    border: none;
+    width: 100%;
+    padding: 13px;
+    color: black;
+    font-weight: 700;
+    cursor: not-allowed;
+}
+.max_width .main .generat_button:hover{
+    background-color: transparent;
+    border: 3px solid #5daf82;
+    width: 100%;
+    padding: 10px;
+    color: #5daf82;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens up to 768 pixels wide */
+    .max_width .data_box .message div {
+        width: 80vw;
+        font-size: 11px;
+    }
+
+    .max_width .data_box .message div span {
+        font-size: 35px;
+
+    }
+
+  }

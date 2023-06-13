@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password generator app</title>
+</head>
+<body>
+    
+    <div class="max_width">
+
+        <div class="data">
+            <h2>Password Generator</h2>
+            <div class="data_box">
+                <input type="text" value="The password will be here" readonly>
+                <button class="copy_pass" type="button" readonly>copy</button readonly>
+                    <div class="message">
+                        <div>
+                            <h1>Password Coped 	<span>&#10003;</span></h1>
+                            <button type="button" readonly>Done</button>
+                        </div>
+                        
+                    </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="Character_Length">
+                <h4>Character Length</h4>
+                <h2>5</h2>
+            </div>
+            <input class="Character" type="range" min="5" max="15" value="5">
+            <div class="inputs">
+                <div class="inputs_data">
+                    <input type="checkbox" data-name="QWERTYUIOPASDFGHJKLZXCVBNM" name="UpperCase" id="UpperCase">
+                    <label for="UpperCase">Include UpperCase Letters</label>
+                </div>
+                <div class="inputs_data">
+                    <input type="checkbox" data-name="qwertyuiopasdfghjklzxcvbnm" name="LowerCase" id="LowerCase">
+                    <label for="LowerCase">Include LowerCase Letters</label for="">
+                </div>
+                <div class="inputs_data">
+                    <input type="checkbox" data-name="1234567890" name="Number" id="Number">
+                    <label for="Number">Include Numbers</label for="">
+                </div>
+                <div class="inputs_data">
+                    <input type="checkbox" data-name="!@#$%^&*()-" name="Sympol" id="Sympol">
+                    <label for="Sympol">Include Sympols</label for="">
+                </div>
+            </div>
+            <div class="strength">
+                <h4>strength</h4>
+                <div class="spans_container">
+                    <h3 class="strong">Bad</h3>
+                    <span class="Bad"></span>
+                    <span ></span>
+                    <span ></span>
+                    <span></span>
+                </div>
+            </div>
+            <button class="generat_button" type="button">Generate →</button>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
