@@ -184,12 +184,29 @@ copyPassButton.onclick = function copyPassword() {
 
   }
 
-    overLayForAlarm.onclick = () => {
+    // overLayForAlarm.onclick = () => {
 
         
-    copyAlarm.classList.remove("coped")
+    // copyAlarm.classList.remove("coped")
 
-    }
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
