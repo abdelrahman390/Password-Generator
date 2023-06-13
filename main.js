@@ -27,9 +27,9 @@ sliderEl.addEventListener("input", (event) => {
 
   
 //   const progress = (tempSliderValue / sliderEl.max) * 80;
-const progress = (tempSliderValue * (100 / 20)) ;
+const progress = ((tempSliderValue -5 )  * 10) ;
  
-  sliderEl.style.background = `linear-gradient(to right, rgb(93 175 130) ${progress}%, #ccc ${progress}%)`;
+  sliderEl.style.background = `linear-gradient(to right,  var(--primary-color) ${progress}%, #ccc ${progress}%)`;
 
 })
 
@@ -190,23 +190,6 @@ copyPassButton.onclick = function copyPassword() {
     copyAlarm.classList.remove("coped")
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
