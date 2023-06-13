@@ -9,6 +9,14 @@ body{
     background-color: #08061a;
     font-family: arial;
 }
+
+
+:root {
+    --primary-color: #7cfb87af;
+    --secondary-color: red;
+  }
+
+
 .max_width{
     width: 300px;
     margin: auto;
@@ -69,7 +77,7 @@ body{
 .max_width .data_box .message div button{
     border: none;
     font-size: 35px;
-    background-color: #5daf82;
+    background-color: var(--primary-color);
     color: #000000bf;
     padding: 10px 25px;
     border-radius: 5px;
@@ -92,7 +100,7 @@ body{
 .max_width .data_box .copy_pass{
     border: none;
     background: transparent;
-    color: #5daf82;
+    color: var(--primary-color);
     font-size: 15px;
     cursor: pointer;
 }
@@ -113,7 +121,7 @@ body{
 }
 .max_width .main .Character_Length h2{
     display: inline-block;
-    color: #5daf82;
+    color:  var(--primary-color);
 }
 
 /* range 2 */
@@ -125,16 +133,20 @@ body{
     height: 6px;
     margin-bottom: 20px;
 }
+/* .max_width .main .Character::-webkit-slider-runnable-track {
+    background: red;
+    height: 6px;
 
+  } */
 .max_width .main .Character::-webkit-slider-thumb {
-    -webkit-appearance: none;
     appearance: none; 
     height: 20px;
     width: 20px;
     background-color: #18171f;
     border-radius: 50%;
-    border: 2px solid #5daf82;
+    border: 2px solid  var(--primary-color);
     transition: .2s ease-in-out;
+    
 }
 
 .max_width .main .Character::-moz-range-thumb {
@@ -145,7 +157,6 @@ body{
     border: none;
     transition: .2s ease-in-out;
 }
-
 
 .max_width .main .inputs{
     display: flex;
@@ -169,7 +180,7 @@ body{
     border: 0.15em solid currentColor;
     border-radius: 0.15em;
     transform: translateY(-0.075em);
-    accent-color: #5daf82;
+    accent-color:  var(--primary-color);
 }
 .max_width .main .inputs .inputs_data label{
     opacity: 0.6;
@@ -225,7 +236,7 @@ body{
     opacity: 1;
 }
 .max_width .main .generat_button{
-    background-color: #5daf82;
+    background-color:  var(--primary-color);
     border: none;
     width: 100%;
     padding: 13px;
@@ -245,7 +256,7 @@ body{
 }
 .max_width .main .generat_button:hover{
     background-color: transparent;
-    border: 3px solid #5daf82;
+    border: 3px solid  var(--primary-color);
     width: 100%;
     padding: 10px;
     color: #5daf82;
