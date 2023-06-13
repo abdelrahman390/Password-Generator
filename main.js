@@ -15,7 +15,7 @@ let overLayForAlarm = document.querySelector(".max_width .data_box .coped")
 
 let checkedRadioNumber = 1;
 let glopalRangeValue = 5
-let checkedInputs = ['UQWERTYUIOPASDFGHJKLZXCVBNM']
+let checkedInputs = ['QWERTYUIOPASDFGHJKLZXCVBNM']
 
 
 
@@ -39,22 +39,24 @@ genaratPassword(glopalRangeValue)
 
 //  change number of checked Radio
 radios.forEach((ele) => {
-    radios[0].checked = true
+  radios[0].checked = true
 
             ele.addEventListener('click', (e) => {
         
                 if (e.target.checked === true){
 
+                    
+
                     checkedInputs.push(e.target.dataset.name)
 
-                    // console.log(checkedInputs)
+                    console.log(checkedInputs)
 
                     checkedRadioNumber ++
                 } else if (e.target.checked === false){
 
                     checkedInputs = checkedInputs.filter(item => item !== e.target.dataset.name);
 
-                    // console.log(checkedInputs)
+                    console.log(checkedInputs)
 
                     checkedRadioNumber --
                 }
